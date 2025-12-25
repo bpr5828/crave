@@ -1,10 +1,10 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import RecipeCard from '../components/RecipeCard';
 
-export default function ResultsPage() {
+function ResultsContent() {
     const searchParams = useSearchParams();
     const [recipes, setRecipes] = useState([]);
 
@@ -35,5 +35,13 @@ export default function ResultsPage() {
                 </div>
             </div>
         </div>
+    );
+}
+
+export default function ResultsPage() {
+    return (
+        <Suspense fallback={<div style={{ textAlign: 'center', padding: '4rem' }}>Loading...</div>}>
+            <ResultsContent />
+        </Suspense>
     );
 }

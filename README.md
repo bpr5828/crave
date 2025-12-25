@@ -57,19 +57,37 @@ The project is configured for **Serverless Containers** (Docker) to ensure consi
 - Docker installed and running.
 - Cloud CLI tools (`aws`, `az`, `gcloud`) installed and authenticated.
 
-### 1. AWS App Runner
+### 1. Vercel (Recommended)
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new).
+
+#### Option A: Git Integration
+1. Push your code to a git repository (GitHub, GitLab, BitBucket).
+2. Import your project into Vercel.
+3. Vercel will automatically detect the Next.js framework and configure the build settings.
+4. Click **Deploy**.
+
+For more details, check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
+
+#### Option B: Vercel CLI
+Deploy directly from your terminal:
+```bash
+./deploy/vercel.sh
+```
+
+
+### 2. AWS App Runner
 Deploy to AWS using a fully managed container service.
 ```bash
 ./deploy/aws.sh
 ```
 
-### 2. Azure Container Apps
+### 3. Azure Container Apps
 Deploy to Azure's serverless container platform.
 ```bash
 ./deploy/azure.sh
 ```
 
-### 3. Google Cloud Run
+### 4. Google Cloud Run
 Deploy to Google's fully managed serverless platform.
 ```bash
 ./deploy/gcp.sh
