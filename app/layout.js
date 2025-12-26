@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Head from 'next/head';
 
 export const metadata = {
-    title: 'Crave - Your AI Personal Chef',
+    title: "Crave By 'N' - Where Fashion meets Taste",
     description: 'Personalized recipe suggestions powered by AI',
 };
 

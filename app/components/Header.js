@@ -21,7 +21,7 @@ export default function Header() {
         }}>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
                 <Link href="/" style={{ fontSize: '1.5rem', fontWeight: '800', color: 'var(--color-primary)' }}>
-                    Crave
+                    Crave By 'N'
                 </Link>
 
                 <nav style={{ display: 'flex', gap: '2rem', alignItems: 'center' }}>

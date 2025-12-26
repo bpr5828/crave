@@ -3,7 +3,7 @@ export default function Footer() {
         <footer style={{ backgroundColor: 'var(--color-dark)', color: 'white', padding: '1rem 0', marginTop: 'auto', fontSize: '0.8rem' }}>
             <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                    <h3 style={{ color: 'white', margin: 0, fontSize: '1rem' }}>Crave</h3>
+                    <h3 style={{ color: 'white', margin: 0, fontSize: '1rem' }}>Crave By 'N'</h3>
                     <span style={{ opacity: 0.5 }}>|</span>
                     <p style={{ opacity: 0.7, margin: 0 }}>Your personal AI chef.</p>
                 </div>
@@ -16,7 +16,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="container" style={{ marginTop: '0.5rem', paddingTop: '0.5rem', borderTop: '1px solid rgba(255,255,255,0.1)', textAlign: 'center', opacity: 0.4, fontSize: '0.7rem' }}>
-                © {new Date().getFullYear()} Crave.
+                © {new Date().getFullYear()} Crave By 'N'.
             </div>
         </footer>
     );
